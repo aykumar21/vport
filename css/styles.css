@@ -110,7 +110,7 @@ hr{
     height: 30vh;
     overflow:hidden;
 }
-.carousel-each-item{
-    margin-left: 10px;
-    margin-right: 10px;
+.cards-container{
+    width:100%;
+    padding:2%;
 }
