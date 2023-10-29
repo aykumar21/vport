@@ -17,6 +17,10 @@
 .carousel-inner .carousel-item-prev {
     display: flex;
 }
+.cards-container{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 
 @media (min-width: 768px) {
 
@@ -59,6 +63,11 @@
     align-items: center;
 }
 }
+hr{
+    color: white;
+    width: 90%;
+    margin: auto;
+}
 .about{
     position: absolute;
     top: 50%;
@@ -73,4 +82,18 @@
 .banner-img{
     width: 100%;
     position: relative;
+}
+.object-image{
+    height:40vh;
+    overflow:hidden;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
