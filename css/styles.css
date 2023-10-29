@@ -42,6 +42,10 @@
     .carousel-item-prev:not(.carousel-item-end) {
         transform: translateX(-25%) !important;
     }
+#myCarousel{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 .navbar-container{
     background-color: #252B48;
 }
@@ -73,4 +77,9 @@
 .banner-img{
     width: 100%;
     position: relative;
+}
+.about-me{
+    padding-left: 3%;
+    width: 95%;
+    color: white;
 }
