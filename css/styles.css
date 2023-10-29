@@ -1,3 +1,16 @@
-.main-div{
-    background-color: aqua;
+.navbar-container{
+    background-color: #252B48;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
