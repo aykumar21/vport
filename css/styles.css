@@ -126,6 +126,7 @@ hr{
 .publications{
     color:white;
     padding:0 2%;
+    display: flex;
 }
 .journal{
     width:45%;
@@ -139,4 +140,50 @@ hr{
     margin-left: 3%;
     border: 2px solid #fff;
     border-radius: 2%;
+}
+.project-div{
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.project-heading{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.project-content{
+    font-size: 18px;
+}
+.talks{
+    padding: 2%;
+    width:50%;
+    display: inline-block;
+}
+.awards{
+    padding: 2%;
+    width:50%;
+    display: inline-block;
+}
+.footer-section{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #040D12;
+    display: flex;
+    color: white;
+}
+.left-footer-section{
+    margin-right: 100px;
+    width: 50%;
+    display: inline-block;
+}
+.right-footer-section{
+    width: 50%;
+    display: inline-block;
+}
+.footer-section-content{
+    font-size: 20px;
 }
