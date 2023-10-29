@@ -106,3 +106,7 @@ hr{
     justify-content: center;
     align-items: center;
 }
+.cards-container{
+    width:100%;
+    padding:2%;
+}
