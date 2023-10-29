@@ -106,6 +106,10 @@ hr{
     justify-content: center;
     align-items: center;
 }
+.height-set{
+    height: 30vh;
+    overflow:hidden;
+}
 .cards-container{
     margin-top: 0;
     width:100%;
