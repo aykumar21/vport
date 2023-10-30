@@ -52,6 +52,9 @@
 }
 .navbar-container{
     background-color: #252B48;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .navbar-nav{
     display: flex;
@@ -86,6 +89,10 @@ hr{
 .banner-img{
     width: 100%;
     position: relative;
+}
+.banner-img img{
+    
+    filter: blur(5px);
 }
 .about-me{
     padding-left: 3%;
@@ -168,7 +175,7 @@ hr{
     display: inline-block;
 }
 .footer-section{
-    padding-top: 6%;
+    padding-top: 3%;
     padding-bottom: 6%;
     padding-left: 10%;
     padding-right: 10%;
@@ -187,4 +194,9 @@ hr{
 }
 .footer-section-content{
     font-size: 20px;
+}
+.card-body{
+    background-color: #2A2626;
+    color: white;
+    text-align: center;
 }
