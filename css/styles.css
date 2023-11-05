@@ -94,10 +94,23 @@ hr{
     
     filter: blur(5px);
 }
+.name-header{
+    width: 100%;
+    color: white;
+    display: inline-block;
+  text-align: center;
+}
 .about-me{
     padding-left: 3%;
     width: 95%;
     color: white;
+    display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: center;
+}
+.text-div{
+    flex: 1; /* Distribute available space equally between text divs */
+  text-align: justify;
 }
 .object-image{
     height:40vh;
