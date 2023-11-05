@@ -48,56 +48,56 @@
     <div class="carousel-inner w-100">
       <div class="carousel-item active">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(1)">
             <img class="img-fluid" src="/carousel-image/image1.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(2)">
             <img class="img-fluid" src="/carousel-image/image2.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(3)">
             <img class="img-fluid" src="/carousel-image/image3.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(4)">
             <img class="img-fluid" src="/carousel-image/image4.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(5)">
             <img class="img-fluid" src="/carousel-image/image5.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(6)">
             <img class="img-fluid" src="/carousel-image/image6.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(7)">
             <img class="img-fluid" src="/carousel-image/image7.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set">
+          <div class="card card-body height-set" onclick="openModal(8)">
             <img class="img-fluid" src="/carousel-image/image8.jpg" />
           </div>
         </div>
@@ -114,19 +114,21 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  
   <hr>
   <div class="name-header">
     <h1>Dr. Vinay Shankar Pandey</h1>
   </div>
   <div class="about-me" id="aboutMe">
-    
-    
+
+
 
     <div class="text-div">
       <p>Dr. Vinay Shankar Pandey is a dedicated and accomplished individual currently serving as an Assistant Professor
         at the esteemed National Institute of Technology in Delhi, India. With a strong background in the Department
         of Applied Sciences, Vinay Shankar Pandey has made significant contributions to the field of electromagnetic
-        wave research, particularly in plasma and dielectric media.Another prominent aspect of Vinay's research involves dielectric resonator antennas, an area where he has made notable advancements. 
+        wave research, particularly in plasma and dielectric media.Another prominent aspect of Vinay's research involves
+        dielectric resonator antennas, an area where he has made notable advancements.
       </p>
     </div>
     <img style="float: left;padding-right: 5%;padding-bottom: 2%; padding-left: 2%;" src="./images/about.png" alt="">
@@ -225,30 +227,32 @@
         </div>
       </div>
     </div>
-        <div class="col">
-          <div class="card h-100">
-              <div class="object-image"> 
-            <img src="/images/Praveen.jpg" class="card-img-top" alt="Praveen"></div>
-            <div class="card-body">
-              <h5 class="card-title">Praveen Kumar Chakravati</h5>
-              <p class="card-text">Research Scholar <br>
-                  Department of Physics NIT Delhi</p>
-              <div> Please find my CV <a href="">here</a></div>
-          </div>
-          </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="object-image">
+          <img src="/images/Praveen.jpg" class="card-img-top" alt="Praveen">
         </div>
-        <div class="col">
-          <div class="card h-100">
-              <div class="object-image"> 
-            <img src="/images/satyanarayan.jpg" class="card-img-top" alt="Satyanarayan"></div>
-            <div class="card-body">
-              <h5 class="card-title">Satyanarayan Parida</h5>
-              <p class="card-text">Research Scholar <br>
-                  Department of Physics NIT Delhi</p>
-              <div> Please find my CV <a href="">here</a></div>
-          </div>
-          </div>
+        <div class="card-body">
+          <h5 class="card-title">Praveen Kumar Chakravati</h5>
+          <p class="card-text">Research Scholar <br>
+            Department of Physics NIT Delhi</p>
+          <div> Please find my CV <a href="">here</a></div>
         </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="object-image">
+          <img src="/images/satyanarayan.jpg" class="card-img-top" alt="Satyanarayan">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Satyanarayan Parida</h5>
+          <p class="card-text">Research Scholar <br>
+            Department of Physics NIT Delhi</p>
+          <div> Please find my CV <a href="">here</a></div>
+        </div>
+      </div>
+    </div>
   </div>
   <hr>
   <div class="publications">
@@ -414,6 +418,13 @@
       </div>
     </div>
   </div>
+  <div id="modal" class="modal" style="transform: translate(10px, 10px);" >
+    <div class="modal-content" style="width: 70%;height: 50%;">
+      <span id="closeModalBtn" class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Modal Image">
+    </div>
+  </div>
+  <div id="overlay" class="overlay" onclick="closeModal()"></div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   <script src="index.js"></script>
