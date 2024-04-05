@@ -44,60 +44,60 @@
       @ National Institute of Technology, Delhi
     </div>
   </div>
-  <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel" >
+  <div  id="myCarousel" class="carousel slide container" data-bs-ride="carousel" >
     <div class="carousel-inner w-100">
       <div class="carousel-item active">
-        <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(1)">
-            <img class="img-fluid" src="/carousel-image/image1.jpg" />
+        <div id="expandButton"  class="col-md-3">
+          <div  class="card card-body height-set" onclick="openModal(1)" style="border-radius: 50%;">
+            <img  class="img-fluid" src="/carousel-image/image1.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(2)">
-            <img class="img-fluid" src="/carousel-image/image2.jpg" />
+          <div class="card card-body height-set" onclick="openModal(2)" style="border-radius: 50%;">
+            <img  class="img-fluid" src="/carousel-image/image2.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(3)">
+          <div class="card card-body height-set" onclick="openModal(3)" style="border-radius: 50%;">
             <img class="img-fluid" src="/carousel-image/image3.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(4)">
+          <div class="card card-body height-set" onclick="openModal(4)" style="border-radius: 50%;">
             <img class="img-fluid" src="/carousel-image/image4.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(5)">
+          <div class="card card-body height-set" onclick="openModal(5)" style="border-radius: 50%;">
             <img class="img-fluid" src="/carousel-image/image5.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(6)">
+          <div class="card card-body height-set" onclick="openModal(6)" style="border-radius: 50%;">
             <img class="img-fluid" src="/carousel-image/image6.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(7)">
+          <div class="card card-body height-set" onclick="openModal(7)" style="border-radius: 50%;">
             <img class="img-fluid" src="/carousel-image/image7.jpg" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="col-md-3">
-          <div class="card card-body height-set" onclick="openModal(8)">
+          <div class="card card-body height-set" onclick="openModal(8)" style="border-radius: 50%;">
             <img class="img-fluid" src="/carousel-image/image8.jpg" />
           </div>
         </div>
@@ -149,7 +149,7 @@
 
   <div class="row row-cols-1 row-cols-md-4 g-4 cards-container">
     <div class="col">
-      <div class="card h-100">
+      <div class="card h-100 ">
         <div class="object-image">
           <img src="/images/Himani_Mehta.png.jpg" class="card-img-top" alt="Himani_Mehta">
         </div>
@@ -161,7 +161,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col card-container">
       <div class="card h-100">
         <div class="object-image">
           <img src="/images/Ankit.png.jpg" class="card-img-top" alt="Ankit">
@@ -174,7 +174,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col card-container">
       <div class="card h-100">
 
         <div class="object-image">
@@ -188,7 +188,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col card-container">
       <div class="card h-100">
         <div class="object-image">
           <img src="/images/Shakti_Singh.png.jpg" class="card-img-top" alt="Shakti_Singh">
@@ -201,7 +201,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col card-container">
       <div class="card h-100">
         <div class="object-image">
           <img src="/images/Shilpa_Patra.png.jpg" class="card-img-top" alt="Shilpa_Patra">
@@ -214,7 +214,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col card-container">
       <div class="card h-100">
         <div class="object-image">
           <img src="/images/shweta_Singh.png.jpg" class="card-img-top" alt="shweta_Singh">
@@ -227,7 +227,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col card-container">
       <div class="card h-100">
         <div class="object-image">
           <img src="/images/Praveen.jpg" class="card-img-top" alt="Praveen">
@@ -240,7 +240,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col card-container">
       <div class="card h-100">
         <div class="object-image">
           <img src="/images/satyanarayan.jpg" class="card-img-top" alt="Satyanarayan">
@@ -424,8 +424,14 @@
       <img id="modalImage" src="" alt="Modal Image">
     </div>
   </div>
-  <div id="overlay" class="overlay" onclick="closeModal()"></div>
-
+  <!-- <div id="overlay" class="overlay" onclick="closeModal()"></div> -->
+  <!-- <div id="overlay" class="hidden">
+    <div id="expandedContent">
+      <span id="closeButton" class="close">&#215;</span>
+      <img id="expandedImage" src="" alt="Expanded Image">
+    </div>
+  </div> 
+  <button >Click mE</button> -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   <script src="index.js"></script>
 </body>
