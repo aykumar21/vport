@@ -23,6 +23,11 @@
     margin-bottom: 2%;
 }
 
+.card {
+    border: 1px solid transparent; /* This will remove the border by making it transparent */
+}
+  
+  
 @media (min-width: 768px) {
 
     .carousel-inner .carousel-item-right.active,
