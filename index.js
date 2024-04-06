@@ -24,19 +24,19 @@ const overlay = document.getElementById("overlay");
 const modalImage = document.getElementById("modalImage");
 
 // Function to open the modal
-function openModal(slideNumber) {
-  modalImage.src = `/carousel-image/image${slideNumber}.jpg`;
-  // modalImage.style.transform = "scale(2)";
-  modal.style.display = "block";
-  overlay.style.display = "block";
-}
+// function openModal(slideNumber) {
+//   modalImage.src = `/carousel-image/image${slideNumber}.jpg`;
+//   // modalImage.style.transform = "scale(2)";
+//   modal.style.display = "block";
+//   overlay.style.display = "block";
+// }
 
 // Function to close the modal
-function closeModal() {
-  modal.style.display = "none";
-  overlay.style.display = "none";
-  modalImage.src = "";
-}
+// function closeModal() {
+//   modal.style.display = "none";
+//   overlay.style.display = "none";
+//   modalImage.src = "";
+// }
 
 // const expandButton = document.getElementById("expandButton");
 // const overlay = document.getElementById("overlay");
