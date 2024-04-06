@@ -114,7 +114,7 @@ hr{
 .text-div{
     flex: 1; /* Distribute available space equally between text divs */
     font-size: large;
-  text-align: justify;
+    text-align: justify;
 }
 .object-image{
     height:40vh;
@@ -213,6 +213,7 @@ hr{
     font-size: 20px;
 }
 .card-body{
+    height: 100%;
     background-color: #2A2626;
     color: white;
     cursor: pointer;
