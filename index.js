@@ -26,31 +26,19 @@ const modalImage = document.getElementById("modalImage");
 // Function to open the modal
 function openModal(slideNumber) {
   modalImage.src = `/carousel-image/image${slideNumber}.jpg`;
-  // modalImage.style.transform = "scale(2)";
-  modal.style.display = "block";
+  modal.style.display = "block"; // Changed to "block" to ensure it's visible
   overlay.style.display = "block";
 }
 
-// Function to close the modal
 function closeModal() {
   modal.style.display = "none";
   overlay.style.display = "none";
   modalImage.src = "";
 }
 
-// const expandButton = document.getElementById("expandButton");
-// const overlay = document.getElementById("overlay");
-// const closeButton = document.getElementById("closeButton");
-// const expandedImage = document.getElementById("expandedImage");
+// Add event listener to overlay to close modal when clicked
+overlay.addEventListener("click", closeModal);
 
-// expandButton.addEventListener("click", function () {
-//   overlay.classList.remove("hidden");
-//   overlay.classList.add("notHidden");
-//   const originalImageSrc = expandButton.getAttribute("src");
-//   expandedImage.setAttribute("src", "/carousel-image/image4.jpg");
-// });
 
-// closeButton.addEventListener("click", function () {
-//   overlay.classList.add("hidden");
-//   overlay.classList.remove("notHidden");
-// });
+
+
